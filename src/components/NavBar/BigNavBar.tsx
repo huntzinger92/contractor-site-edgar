@@ -13,7 +13,7 @@ export const BigNavBar = ({ handleNavItemClick, pages }: IBigNavBarProps) => {
     <Box sx={styles.bigNavBarContainer}>
       <Box sx={styles.mediumLogoContainer}>
         <Button
-          href={ROUTES.HOME}
+          onClick={() => handleNavItemClick(ROUTES.HOME)}
           sx={styles.mediumAppBarButtons}
           variant="contained"
         >
