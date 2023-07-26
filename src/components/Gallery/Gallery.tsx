@@ -1,9 +1,9 @@
 import Typography from '@mui/material/Typography';
 
-export const Contact = () => {
+export const Gallery = () => {
   return (
     <div>
-      <Typography variant="h3">Contact page</Typography>
+      <Typography variant="h3">Gallery page</Typography>
     </div>
   );
 };

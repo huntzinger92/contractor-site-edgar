@@ -6,6 +6,7 @@ import Menu from '@mui/material/Menu';
 import MenuIcon from '@mui/icons-material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import { ROUTES } from '../../constants/routes';
+import image from './dummyLogo.png';
 import * as styles from './NavBar.styles';
 
 export interface ISmallNavBarProps {
@@ -31,6 +32,7 @@ export const SmallNavBar = ({
     handleCloseNavMenu();
     handleNavItemClick(route);
   };
+
   return (
     <Box sx={styles.smallNavContentStyle}>
       <IconButton
@@ -81,15 +83,11 @@ export const SmallNavBar = ({
       </Menu>
 
       <Box sx={styles.smallLogoContainer}>
-        <Typography
-          variant="h5"
-          noWrap
-          component="a"
-          href={ROUTES.HOME}
-          sx={styles.smallLogoStyle}
-        >
-          LOGO
-        </Typography>
+        <img
+          src={image}
+          style={styles.smallLogo}
+          onClick={() => onNavItemClick(ROUTES.HOME)}
+        />
       </Box>
     </Box>
   );

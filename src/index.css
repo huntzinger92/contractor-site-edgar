@@ -4,8 +4,8 @@ body {
   min-height: 100vh;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-  text-align: center;
+#root {
+  min-height: 100vh;
+  background-color: #f0f0f0;
+  color: #212121;
 }

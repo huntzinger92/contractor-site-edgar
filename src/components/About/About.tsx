@@ -1,10 +1,16 @@
-import { aboutFirstParagraph } from './About.text';
+import { aboutParagraphs } from './About.text';
+import Typography from '@mui/material/Typography';
+import * as styles from './About.styles';
 
 export const About = () => {
   return (
     <div>
-      <h1 style={{ textAlign: 'center', color: '#2d3359' }}>About page</h1>
-      <p style={{ textAlign: 'center' }}>{aboutFirstParagraph}</p>
+      <Typography variant="h3">About page</Typography>
+      {aboutParagraphs.map(paragraph => (
+        <Typography key={paragraph} sx={styles.paragraphMargin}>
+          {paragraph}
+        </Typography>
+      ))}
     </div>
   );
 };
