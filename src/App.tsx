@@ -5,7 +5,7 @@ import { ROUTES } from './constants/routes';
 import { Route, Routes } from 'react-router-dom';
 import { Home } from './components/Home/Home';
 import { About } from './components/About/About';
-import { Portfolio } from './components/Portfolio/Portfolio';
+import { Gallery } from './components/Gallery/Gallery';
 import { Contact } from './components/Contact/Contact';
 import { ResponsiveAppContainer } from './components/ResponsiveAppContainer/ResponsiveAppContainer';
 
@@ -17,7 +17,7 @@ function App() {
         <Routes>
           <Route path={ROUTES.HOME} element={<Home />} />
           <Route path={ROUTES.ABOUT} element={<About />} />
-          <Route path={ROUTES.PORTFOLIO} element={<Portfolio />} />
+          <Route path={ROUTES.GALLERY} element={<Gallery />} />
           <Route path={ROUTES.CONTACT} element={<Contact />} />
         </Routes>
       </ResponsiveAppContainer>

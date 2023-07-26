@@ -1,19 +1,21 @@
-import { createTheme } from "@mui/material/styles";
+import { createTheme } from '@mui/material/styles';
 
-export const backgroundColor = "#292929";
+export const backgroundColor = '#f0f0f0';
 
-export const slightlyDarkerBlack = "#262626";
+export const slightlyDarkerBackgroundColor = '#ebebed';
 
-export const contrastingBackgroundColor = "#1a1a1a";
+export const contrastingBackgroundColor = '#ffffff';
 
-export const defaultTextColor = "#dbdbdb";
+export const defaultTextColor = '#212121';
 
 // navbar button text
-export const secondaryTextColor = "#1f1f1f";
+export const secondaryTextColor = '#1f1f1f';
 
-export const disabledButtonTextColor = "gray";
+export const disabledButtonTextColor = 'gray';
 
-export const thematicRed = "#e62020";
+export const thematicBlue = '#2d3359';
+
+export const thematicBlueBackgroundColor = '#c3ccfa';
 
 export const theme = createTheme({
   components: {
@@ -23,7 +25,7 @@ export const theme = createTheme({
           backgroundColor,
           color: defaultTextColor,
           // enabled outlined textfield border
-          "&:hover:not($disabled):not($focused):not($error) $notchedOutline":
+          '&:hover:not($disabled):not($focused):not($error) $notchedOutline':
             {},
         },
       },
@@ -31,9 +33,9 @@ export const theme = createTheme({
     MuiButton: {
       styleOverrides: {
         root: {
-          ":disabled": {
-            backgroundColor: "#8a8a8a",
-            color: "black",
+          ':disabled': {
+            backgroundColor: '#8a8a8a',
+            color: 'black',
           },
         },
       },
@@ -43,21 +45,21 @@ export const theme = createTheme({
         root: {
           backgroundColor,
           color: defaultTextColor,
-          fontSize: "15px",
-          ":hover": {
-            color: thematicRed,
+          fontSize: '15px',
+          ':hover': {
+            color: thematicBlue,
           },
-          transition: "color .4s ease",
+          transition: 'color .4s ease',
         },
         label: {
-          cursor: "pointer",
+          cursor: 'pointer',
         },
       },
     },
     MuiContainer: {
       styleOverrides: {
         root: {
-          paddingLeft: "0px",
+          paddingLeft: '0px',
         },
       },
     },
@@ -88,19 +90,19 @@ export const theme = createTheme({
       styleOverrides: {
         root: {
           backgroundColor: contrastingBackgroundColor,
-          boxShadow: "0px 0px 5px black",
+          // boxShadow: '0px 0px 5px black',
         },
       },
     },
     MuiOutlinedInput: {
       styleOverrides: {
         root: {
-          "&:hover .MuiOutlinedInput-notchedOutline": {
+          '&:hover .MuiOutlinedInput-notchedOutline': {
             borderColor: defaultTextColor,
           },
         },
         input: {
-          "&:-webkit-autofill": {
+          '&:-webkit-autofill': {
             WebkitBoxShadow: `0 0 0 100px ${backgroundColor} inset`,
             WebkitTextFillColor: defaultTextColor,
           },
@@ -140,10 +142,16 @@ export const theme = createTheme({
   },
   typography: {
     button: {
-      textTransform: "none",
+      textTransform: 'none',
     },
     allVariants: {
       color: defaultTextColor,
+    },
+    h3: {
+      color: thematicBlue,
+      textAlign: 'center',
+      marginTop: '20px',
+      marginBottom: '15px',
     },
   },
 });

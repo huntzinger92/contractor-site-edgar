@@ -19,8 +19,8 @@ export const NavBar = () => {
       route: ROUTES.ABOUT,
     },
     {
-      navText: 'Portfolio',
-      route: ROUTES.PORTFOLIO,
+      navText: 'Gallery',
+      route: ROUTES.GALLERY,
     },
     {
       navText: 'Contact',

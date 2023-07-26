@@ -1,6 +1,7 @@
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import { ROUTES } from '../../constants/routes';
+import image from './dummyLogo.png';
 import * as styles from './NavBar.styles';
 
 export interface IBigNavBarProps {
@@ -13,11 +14,15 @@ export const BigNavBar = ({ handleNavItemClick, pages }: IBigNavBarProps) => {
     <Box sx={styles.bigNavBarContainer}>
       <Box sx={styles.mediumLogoContainer}>
         <Button
-          href={ROUTES.HOME}
-          sx={styles.mediumAppBarButtons}
+          onClick={() => handleNavItemClick(ROUTES.HOME)}
+          sx={{
+            ...styles.mediumAppBarButtons,
+            paddingTop: 0,
+            paddingBottom: 0,
+          }}
           variant="contained"
         >
-          LOGO
+          <img style={styles.bigLogo} src={image} />
         </Button>
       </Box>
       <Box

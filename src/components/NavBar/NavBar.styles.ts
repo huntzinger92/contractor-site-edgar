@@ -2,8 +2,8 @@ import { SxProps } from '@mui/material';
 import {
   backgroundColor,
   defaultTextColor,
-  slightlyDarkerBlack,
-  thematicRed,
+  slightlyDarkerBackgroundColor,
+  thematicBlue,
 } from '../../constants/globalStyles';
 
 export const mediumLogoStyle = {
@@ -29,8 +29,8 @@ export const mediumLogoContainer = {
 
 export const navButtonHoverStyle = {
   ':hover': {
-    backgroundColor: slightlyDarkerBlack,
-    color: thematicRed,
+    backgroundColor: slightlyDarkerBackgroundColor,
+    color: thematicBlue,
     transition: 'background-color .4s ease, color .4s ease',
   },
 };
@@ -44,6 +44,7 @@ export const mediumAppBarButtons = {
   marginTop: '0px',
   fontSize: '15px',
   borderRadius: '0px',
+  boxShadow: 'none',
   ...navButtonHoverStyle,
 };
 
@@ -67,7 +68,7 @@ export const smallLogoStyle = {
   textDecoration: 'none',
   width: 'fit-content',
   '&:hover': {
-    color: thematicRed,
+    color: thematicBlue,
   },
 };
 
@@ -102,3 +103,10 @@ export const bigNavBarContainer: SxProps = {
   display: 'flex',
   flexDirection: 'row',
 };
+
+export const bigLogo = {
+  maxHeight: '60px',
+  backgroundColor: 'transparent',
+};
+
+export const smallLogo = { height: '50px', cursor: 'pointer' };

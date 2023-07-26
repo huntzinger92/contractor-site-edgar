@@ -14,11 +14,7 @@ export const ResponsiveAppContainer = ({
     paddingBottom: '25px',
   };
   if (aboveLargeScreen) {
-    return (
-      <Box sx={{ width: '64%', border: '1px solid red', ...commonStyle }}>
-        {children}
-      </Box>
-    );
+    return <Box sx={{ width: '64%', ...commonStyle }}>{children}</Box>;
   }
   if (aboveMediumScreen) {
     return <Box sx={{ width: '70%', ...commonStyle }}>{children}</Box>;
