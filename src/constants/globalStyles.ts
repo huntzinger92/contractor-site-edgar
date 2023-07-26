@@ -90,7 +90,6 @@ export const theme = createTheme({
       styleOverrides: {
         root: {
           backgroundColor: contrastingBackgroundColor,
-          // boxShadow: '0px 0px 5px black',
         },
       },
     },
