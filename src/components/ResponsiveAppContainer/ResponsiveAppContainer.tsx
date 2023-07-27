@@ -11,7 +11,6 @@ export const ResponsiveAppContainer = ({
   const aboveSmallScreen = useMediaQuery(theme.breakpoints.up('sm'));
   const commonStyle = {
     margin: 'auto',
-    paddingBottom: '25px',
   };
   if (aboveLargeScreen) {
     return <Box sx={{ width: '64%', ...commonStyle }}>{children}</Box>;
