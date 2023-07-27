@@ -6,7 +6,7 @@ import Menu from '@mui/material/Menu';
 import MenuIcon from '@mui/icons-material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import { ROUTES } from '../../constants/routes';
-import image from './dummyLogo.png';
+import image from '../../constants/eLogo.png';
 import * as styles from './NavBar.styles';
 
 export interface ISmallNavBarProps {

@@ -35,6 +35,11 @@ export const footerLinks = {
   },
 };
 
+export const contactLink = {
+  ...footerLinks,
+  textWrap: 'nowrap',
+};
+
 export const linksContainer = {
   display: 'flex',
   flexDirection: 'column',

@@ -32,7 +32,7 @@ export const navButtonHoverStyle = {
     backgroundColor: slightlyDarkerBackgroundColor,
     color: thematicBlue,
     transition: 'background-color .4s ease, color .4s ease',
-    boxShadow: '0 4px 2px -2px',
+    boxShadow: `0 4px 2px -2px ${defaultTextColor}`,
   },
 };
 
@@ -106,13 +106,13 @@ export const bigNavBarContainer: SxProps = {
 };
 
 export const bigLogo = {
-  maxHeight: '60px',
+  maxHeight: '40px',
   backgroundColor: 'transparent',
   filter: 'invert(1)',
 };
 
 export const smallLogo = {
-  height: '50px',
+  height: '30px',
   cursor: 'pointer',
   color: contrastingTextColor,
   filter: 'invert(1)',
