@@ -8,10 +8,8 @@ export const About = () => {
   return (
     <div>
       <Typography variant="h3">About Us</Typography>
-      <Box
-        sx={{ display: 'flex', justifyContent: 'center', marginBottom: '15px' }}
-      >
-        <img src={companyImage} style={{ maxHeight: '40vh' }} />
+      <Box sx={styles.imageContainer}>
+        <img src={companyImage} style={styles.image} />
       </Box>
       {aboutParagraphs.map(paragraph => (
         <Typography key={paragraph} sx={styles.paragraphMargin}>

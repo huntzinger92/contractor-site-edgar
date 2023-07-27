@@ -15,6 +15,7 @@ function App() {
     <ThemeProvider theme={theme}>
       <NavBar />
       <ResponsiveAppContainer>
+        {/* make all pages have a bottom margin of 25px before footer */}
         <Box sx={{ marginBottom: '25px' }}>
           <Routes>
             <Route path={ROUTES.HOME} element={<Home />} />
