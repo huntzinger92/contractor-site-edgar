@@ -7,3 +7,5 @@ export const imageContainer = {
 };
 
 export const image = { maxHeight: '40vh', maxWidth: '100%' };
+
+export const imagePlaceholder = { height: image.maxHeight };
