@@ -9,34 +9,24 @@ export const contrastingBackgroundColor = '#ffffff';
 export const defaultTextColor = '#212121';
 
 // navbar button text
-export const secondaryTextColor = '#1f1f1f';
+export const contrastingTextColor = 'white';
 
 export const disabledButtonTextColor = 'gray';
 
-export const thematicBlue = '#2d3359';
+export const thematicBlue = '#00667A';
 
-export const thematicBlueBackgroundColor = '#c3ccfa';
+export const thematicBlueBackgroundColor = '#5268f7';
 
 export const theme = createTheme({
   components: {
     MuiAppBar: {
       styleOverrides: {
         root: {
-          backgroundColor,
-          color: defaultTextColor,
+          backgroundColor: thematicBlue,
+          color: contrastingTextColor,
           // enabled outlined textfield border
           '&:hover:not($disabled):not($focused):not($error) $notchedOutline':
             {},
-        },
-      },
-    },
-    MuiButton: {
-      styleOverrides: {
-        root: {
-          ':disabled': {
-            backgroundColor: '#8a8a8a',
-            color: 'black',
-          },
         },
       },
     },
@@ -44,7 +34,6 @@ export const theme = createTheme({
       styleOverrides: {
         root: {
           backgroundColor,
-          color: defaultTextColor,
           fontSize: '15px',
           ':hover': {
             color: thematicBlue,
@@ -63,13 +52,6 @@ export const theme = createTheme({
         },
       },
     },
-    MuiInputBase: {
-      styleOverrides: {
-        root: {
-          color: defaultTextColor,
-        },
-      },
-    },
     MuiList: {
       styleOverrides: {
         root: {
@@ -82,7 +64,6 @@ export const theme = createTheme({
       styleOverrides: {
         root: {
           backgroundColor,
-          color: defaultTextColor,
         },
       },
     },
@@ -96,32 +77,19 @@ export const theme = createTheme({
     MuiOutlinedInput: {
       styleOverrides: {
         root: {
-          '&:hover .MuiOutlinedInput-notchedOutline': {
-            borderColor: defaultTextColor,
-          },
+          '&:hover .MuiOutlinedInput-notchedOutline': {},
         },
         input: {
           '&:-webkit-autofill': {
             WebkitBoxShadow: `0 0 0 100px ${backgroundColor} inset`,
-            WebkitTextFillColor: defaultTextColor,
           },
-        },
-        notchedOutline: {
-          borderColor: defaultTextColor,
-        },
-      },
-    },
-    MuiSelect: {
-      styleOverrides: {
-        icon: {
-          color: defaultTextColor,
         },
       },
     },
     MuiSvgIcon: {
       styleOverrides: {
         root: {
-          color: defaultTextColor,
+          color: contrastingTextColor,
         },
       },
     },
@@ -129,14 +97,13 @@ export const theme = createTheme({
       styleOverrides: {
         root: {
           backgroundColor,
-          color: defaultTextColor,
         },
       },
     },
   },
   palette: {
     primary: {
-      main: defaultTextColor,
+      main: thematicBlue,
     },
   },
   typography: {

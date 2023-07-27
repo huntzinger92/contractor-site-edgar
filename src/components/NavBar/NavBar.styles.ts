@@ -1,6 +1,6 @@
 import { SxProps } from '@mui/material';
 import {
-  backgroundColor,
+  contrastingTextColor,
   defaultTextColor,
   slightlyDarkerBackgroundColor,
   thematicBlue,
@@ -32,14 +32,15 @@ export const navButtonHoverStyle = {
     backgroundColor: slightlyDarkerBackgroundColor,
     color: thematicBlue,
     transition: 'background-color .4s ease, color .4s ease',
+    boxShadow: '0 4px 2px -2px',
   },
 };
 
 export const mediumAppBarButtons = {
   my: 2,
-  color: defaultTextColor,
+  color: contrastingTextColor,
   display: 'flex',
-  backgroundColor,
+  backgroundColor: thematicBlue,
   marginBottom: '0px',
   marginTop: '0px',
   fontSize: '15px',
@@ -107,6 +108,12 @@ export const bigNavBarContainer: SxProps = {
 export const bigLogo = {
   maxHeight: '60px',
   backgroundColor: 'transparent',
+  filter: 'invert(1)',
 };
 
-export const smallLogo = { height: '50px', cursor: 'pointer' };
+export const smallLogo = {
+  height: '50px',
+  cursor: 'pointer',
+  color: contrastingTextColor,
+  filter: 'invert(1)',
+};

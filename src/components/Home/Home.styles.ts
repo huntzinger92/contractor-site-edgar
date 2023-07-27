@@ -1,1 +1,9 @@
 export const paragraphMargin = { marginBottom: '15px' };
+
+export const imageContainer = {
+  display: 'flex',
+  justifyContent: 'center',
+  marginBottom: '15px',
+};
+
+export const image = { maxHeight: '40vh' };
